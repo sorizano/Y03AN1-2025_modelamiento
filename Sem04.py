@@ -35,7 +35,7 @@ if check_password():
 
         #Selección de gráficos
         st.sidebar.header("Configuración de gráficos")
-        chart_type = st.siderbar.selectbox("Selecciona el tipo de gráfico", ["Barras", "Líneas", "Histograma"])
+        chart_type = st.sidebar.selectbox("Selecciona el tipo de gráfico", ["Barras", "Líneas", "Histograma"])
 
         # Selección de columnas para los ejes
         x_col = st.sidebar.selectbox("Selecciona la columna para el eje X", df.columns)
