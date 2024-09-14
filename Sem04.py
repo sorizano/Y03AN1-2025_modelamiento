@@ -20,7 +20,7 @@ def check_password():
         st.error("Contraseña incorrecta")
         return False
     else:
-        return true
+        return True
 
 #verifica la contraseña antes de continuar
 if check_password():
