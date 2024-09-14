@@ -58,3 +58,12 @@ if check_password():
             plt.xlabel(x_col)
             plt.ylabel(y_col)
             st.pyplot(plt)
+        
+        # Histograma
+        elif chart_type == "Histograma":
+            st.subheader(f"Gráfico de {chart_type}")
+            plt.figure(figsize=(10,5))
+            plt.hist(df[y_col], bins=20)
+            plt.xlabel(y_col)
+            plt.ylabel("Frecuencia")
+            st.pyplot(plt)
