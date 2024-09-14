@@ -45,7 +45,7 @@ if check_password():
         y_col = st.sidebar.selectbox("Selecciona la columna para el eje Y", df.columns)
 
         # Gráfico de barras
-        if chart_type = "Barras":
+        if chart_type == "Barras":
             st.subheader(f"Gráfico de {chart_type}")
             plt.figure(figsize=(10,5))
             plt.bar(df[x_col], df[y_col])
